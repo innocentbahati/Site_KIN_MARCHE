@@ -1,0 +1,270 @@
+@font-face{
+    font-family: 'Showcard Gothic';
+    src: url('Showcard Gothic.eot') format('eot'),
+    src: url('Showcard Gothicz.woff') format('woff'),
+    src: url('Showcard Gothic.ttf') format('ttf'),
+    src: url('Showcard Gothic.svg') format('svg'),
+}
+@font-face{
+    font-family: 'Matura MT Script Capitals';
+    src: url('Matura MT Script Capitals.eot') format('eot'),
+    src: url('Matura MT Script Capitals.woff') format('woff'),
+    src: url('Matura MT Script Capitals.ttf') format('ttf'),
+    src: url('Matura MT Script Capitals.svg') format('svg'),
+}
+@font-face{
+    font-family: 'Showcard Gothic';
+    src: url('Showcard Gothic.eot') format('eot'),
+    src: url('Showcard Gothicz.woff') format('woff'),
+    src: url('Showcard Gothic.ttf') format('ttf'),
+    src: url('Showcard Gothic.svg') format('svg'),
+}
+
+
+#en_tete{
+    background-color: red;
+    height: 150px;
+    box-shadow: 1px 1px 6px 6px;
+    border-radius: 8px;
+}
+
+#corps{
+    box-shadow: 1px 1px 6px 6px;
+    border-radius: 8px;
+    background-color: white;
+    height: 1100px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#logo, #super, #titre, #devise{
+    color: white;
+}
+#logo{
+    top: 5px;
+    width: 200px;
+    height: 50px;
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+#logo, #super, #titre, #devise {
+    animation: blink 1.5s infinite;
+}
+#super h2{
+    position: absolute;
+    margin-left: 20%;
+    top: -25px;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Matura MT Script Capitals;
+    text-shadow: 2px 3px 3px black;
+}
+#titre h1{
+    position: absolute;
+    top: -25px;
+    margin-left: 34%;
+    font-family: Showcard Gothic;
+    font-weight: bold;
+    font-size: 83px;
+    text-shadow: 2px 5px 5px black;
+}
+#devise h3{
+    top: 93px;
+    position: absolute;
+    margin-left: 60%;
+    font-weight: bold;
+    font-family: Matura MT Script Capitals;
+    font-size: 28px;
+    text-shadow: 2px 3px 3px black;
+}
+#products{
+    text-decoration: none;
+    color: red;
+    font-weight: bolder;
+    font-size: 35px;
+    text-shadow: 2px 2px 2px black;
+}
+#liens{
+    display: inline-block;
+    float: right;
+    border: 5px double red;
+    padding: 4px;
+}
+#liens{
+    top: 20%;
+}
+#liens a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid red;
+    background-color: red;
+}
+#liens a:hover{
+    color: white;
+    background-color: royalblue;
+    border: 2px solid royalblue;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+#prod, #surprises{
+    background-color: red;
+    position: absolute;
+    height: 35px;
+    border: 1px solid red;
+    margin: auto;
+    color: white;
+    font-size: 25px;
+}
+#prod{
+    left: 25.5%;
+}
+#surprises{
+    right: 19.7%;
+}
+#prod:hover, #surprises:hover{
+    font-size: 27px;
+    transition: 0.3s;
+}
+#nourriture, #boissons, #epices, #beaute{
+    background-color: white;
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    left: 22%;
+    box-shadow: 1px 1px 7px 7px;
+}
+#nourriture{
+    top: 300px;
+    background-image: url("design_accueil/nutri.png");
+}
+#boissons{
+    top: 550px;
+    background-image: url("design_accueil/boissons.png");
+}
+#epices{
+    top: 800px;
+    background-image: url("design_accueil/condiments.png");
+}
+#beaute{
+    top: 1050px;
+    background-image: url("design_accueil/beaute.png");
+}
+
+#bonus, #lotto{
+    background-color: white;
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    right: 22%;
+    box-shadow: 1px 1px 7px 7px;
+}
+#bonus{
+    top: 300px;
+    background-image: url("design_accueil/bonus.png");
+}
+#lotto{
+    top: 650px;
+    background-image: url("design_accueil/lotto.png");
+}
+
+/*Style d'ecriture dans les titres de case*/
+#nourriture, #boissons, #epices, #beaute, #bonus, #lotto{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+footer #design a{
+    text-decoration: solid;
+    font-weight: bold;
+    
+}
+footer #design a:hover{
+    letter-spacing: 4px;
+    transition: 0.5s;
+}
+.theme{
+    text-decoration: underline;
+}
+footer, aside{
+    position: relative;
+    background-color: white;
+    box-shadow: 1px 1px 6px 6px;
+    border-radius: 8px;
+    margin: auto;
+    top: 16px;
+}
+aside{
+    float: left;
+    text-align: center;
+}
+footer{
+    float: right;
+}
+#mode_clair, #mode_sombre{
+    color: rgb(153, 179, 255);
+    background-color: rgba(24, 24, 24, 0.8);
+}
+#mode_clair:hover, #mode_sombre:hover{
+    letter-spacing: 3px;
+    transition: 00.5s;
+}
+
+/*Mettons en forme quelques decos du corps de notre site, pour des mots publicitaires*/
+#pour_bonheur{
+    position: absolute;
+    border: 5px solid red;
+    font-size: 40px;
+    right: 2%;
+    top: 1050px;
+    color: red;
+    border-radius: 55px;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+#pour_bonheur:hover{
+    font-size: 48px;
+    transition: 0.3s;
+}
+#bas_prix, #meilleur{
+    position: absolute;
+    border: 5px solid red;
+    border-radius: 35px;
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+    color: red;
+    padding: 10px;  
+}
+#bas_prix:hover, #meilleur:hover{
+    font-size: 28px;
+    transition: 0.3s;
+}
+#bas_prix{
+    top: 479px;
+    left: 0.7%;
+}
+#meilleur{
+    top: 990px;
+    left: 2%;
+}
+
+#corps, aside, footer{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pour_bonheur, #bas_prix, #meilleur{
+    box-shadow: 1px 1px 6px 6px red inset;
+}
+
+#sites:hover{
+    letter-spacing: -1px;
+    transition: 0.5s;
+}

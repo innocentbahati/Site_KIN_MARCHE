@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bienvenue_sur_Kin_Marche</title>
+    <link rel="stylesheet" href="kin_marche_accueil.css" />
+    <script>
+        function changeMeilleur(){
+            document.getElementById("meilleur").innerHTML = 'PLUS PROCHE DE VOUS';
+        }
+        function changeMeilleurB(){
+            document.getElementById("meilleur").innerHTML = 'LE CLIENT EST ROI !!!';
+        }
+
+        function changeBas(){
+            document.getElementById("bas_prix").innerHTML = 'OUVERT A TOUS';
+        }
+        function changeBasB(){
+            document.getElementById("bas_prix").innerHTML = 'BIENVENU chez KIN-MARCHE !!!';
+        }
+
+        function changeBonheur(){
+            document.getElementById("pour_bonheur").innerHTML = 'AU-DELA DES LIMITES';
+        }
+        function changeBonheurB(){
+            document.getElementById("pour_bonheur").innerHTML = 'VOUS MERITEZ LES MEILLEURS !!!';
+        }
+
+        function darkmode(){
+            document.getElementById("corps").style.backgroundColor= "black";
+            document.getElementById("products").style.backgroundColor= "black";
+            document.getElementById("products").style.color= "white";
+            document.getElementById("pour_bonheur").style.color= "white";
+            document.getElementById("pour_bonheur").style.backgroundColor= "black";
+            document.getElementById("bas_prix").style.color= "white";
+            document.getElementById("bas_prix").style.backgroundColor= "black";
+            document.getElementById("meilleur").style.color= "white";
+            document.getElementById("meilleur").style.backgroundColor= "black";
+            document.getElementById("sites").style.backgroundColor= "black";
+            document.getElementById("sites").style.color= "white";
+            document.getElementById("design").style.color= "white";
+            document.getElementById("design").style.backgroundColor= "black";
+
+            
+        }
+
+        function lightmode(){
+            document.getElementById("corps").style.backgroundColor= "white";
+            document.getElementById("products").style.backgroundColor= "white";
+            document.getElementById("products").style.color= "red";
+            document.getElementById("pour_bonheur").style.color= "red";
+            document.getElementById("pour_bonheur").style.backgroundColor= "white";
+            document.getElementById("bas_prix").style.color= "red";
+            document.getElementById("bas_prix").style.backgroundColor= "white";
+            document.getElementById("meilleur").style.color= "red";
+            document.getElementById("meilleur").style.backgroundColor= "white";
+            document.getElementById("sites").style.backgroundColor= "white";
+            document.getElementById("sites").style.color= "red";
+            document.getElementById("design").style.color= "black";
+            document.getElementById("design").style.backgroundColor= "white";
+        }
+        function reset(){
+            document.getElementById("case1").src = "design_accueil/null.png";
+            document.getElementById("case2").src = "design_accueil/null.png";
+            document.getElementById("case3").src = "design_accueil/null.png";
+            document.getElementById("case4").src = "design_accueil/null.png";
+        }
+
+        function nutriB(){
+            document.getElementById("case1").src = "design_accueil/nutriB.png";
+        }
+        function boissonsB(){
+            document.getElementById("case2").src = "design_accueil/boissonsB.png";
+        }
+        function epicesB(){
+            document.getElementById("case3").src = "design_accueil/epiceB.png";
+        }
+        function beauteB(){
+            document.getElementById("case4").src = "design_accueil/beauteB.png";
+        }
+
+
+        function resetRight(){
+            document.getElementById("case5").src = "design_accueil/null2.png";
+            document.getElementById("case6").src = "design_accueil/null2.png";
+        }
+
+        function bonusB(){
+            document.getElementById("case5").src = "design_accueil/bonusB.png";
+        }
+        function lottoB(){
+            document.getElementById("case6").src = "design_accueil/lottoB.png";
+        }
+    </script>
+
+</head>
+<body>
+    <!-- La section representatiive du titre de Kin Marche -->
+    
+    <div id="en_tete">
+        <img src="design_accueil/logo.png" id="logo">
+        <div id="super">
+            <h2>Super Market</h2>
+        </div>
+        <div id="titre">
+            <h1>KIN-MARCHE</h1>
+        </div>
+        <div id="devise" ><marquee direction="right">
+            <h3>Au Prix Du Grand Marché</h3></marquee>
+        </div>
+    </div>
+
+
+    <!-- Ensuite la div publicitaire et affiche promotionnelle -->
+
+
+<div id="corps">
+    <div id="pub_intro">
+        <div id="liens">
+            <a href="#" id=abonnez_vous>Abonnez-vous</a>
+            <a href="#" id=plus_infos>Plus d'infos</a>
+            <a href="#" id=contacts>CONTACTS</a>
+        </div>
+        <h2 id="products">Nos produits, promotions et surprises</a></h2>
+        <div id="nos_produits">
+            <h3 id="prod">Nos Produits</h3>
+        </div>
+        <div id="nourriture" onmouseover="nutriB();" onmouseleave="reset();">
+            Des produits nutritifs
+            <img id="case1" src="design_accueil/null.png">
+        </div>
+        <div id="boissons" onmouseover="boissonsB();" onmouseleave="reset();">
+            Des boissons
+            <img id="case2" src="design_accueil/null.png">
+        </div>
+        <div id="epices" onmouseover="epicesB()"; onmouseleave="reset();">
+            Des condiments et épices
+            <img id="case3" src="design_accueil/null.png">
+        </div>
+        <div id="beaute" onmouseover="beauteB();" onmouseleave="reset();">
+            Et en plus vos produits de beauté
+            <img id="case4" src="design_accueil/null.png">
+        </div>
+
+
+        <div id="nos_promotions">
+            <h3 id="surprises">Nos Offres et Promotions</h3>
+        </div>
+        <div id="bonus" onmouseover="bonusB();" onmouseleave="resetRight();">
+            Bonus sur achat
+            <img id="case5" src="design_accueil/null2.png">
+        </div>
+        <div id="lotto" onmouseover="lottoB();" onmouseleave="resetRight();">
+            De la loterie et plus de gain
+            <img id="case6" src="design_accueil/null2.png">
+        </div>
+    </div>
+
+    <!-- Quelques mots d'accueil -->
+
+    <div id="pour_bonheur" onmouseover="changeBonheur();" onmouseleave="changeBonheurB();">
+        Toutes conditions réunies<br>
+        pour la joie familiale  
+    </div>
+    <div id="bas_prix" onmouseover="changeBas();" onmouseleave="changeBasB();">
+        Accessibles à un prix<br>
+         TRES ABORDABLE  
+    </div>
+    <div id="meilleur" onmouseover="changeMeilleur();" onmouseleave="changeMeilleurB();">
+        LE MIEUX<br>
+        POUR LE CLIENT
+    </div>
+
+    <!-- Un petit lien vers nos sites -->
+    
+</div>
+
+    <!-- Et quelques choses pour les designers -->
+    <footer>
+    <div id="design">
+        <p>Site designé par le groupe 2 de LIC1/LSI de l'ISIG.</p>
+        <p>Plus d'infos sur <a href="#" class="designers">les designers</a>...</p>
+        <br>                    
+        <button id="mode_sombre" onclick="darkmode();">Mode sombre</button>
+        <button id="mode_clair" onclick="lightmode();">Mode éclairage</button><div class="theme">Changer le thème d'affichage</div>
+    </div>
+    </footer> 
+    <aside>
+        <div id="sites">
+            <p>
+                Visiter nous sur nos réseaux sociaux et decouvrez davantage:
+            </p>
+            <p>         
+                <img src="design_accueil/facebook.png" alt="facebook" class="fb"/>
+                <img src="design_accueil/WhatsApp.png" alt="WhatsApp" class="wapp" />
+                <img src="design_accueil/twitter.png" alt="twitter" class="tweeter" />
+                <img src="design_accueil/instagram.png" alt="instagram" class="instagram" />
+            </p>
+        </div>
+    </aside>  
+    
+</body>
+</html>

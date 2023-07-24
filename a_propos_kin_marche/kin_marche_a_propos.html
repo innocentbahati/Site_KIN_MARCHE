@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kin_marche_a_propos</title>
+    <link rel="stylesheet" href="kin_marche_a_propos.css" />
+    <script>
+
+        // Astuces pour le theme sombre ou clair
+        function darkmode(){
+            document.getElementById("bloc_page").style.backgroundColor= "black";
+            document.getElementById("bloc_page").style.color= "white";
+        }
+        function lightmode(){
+            document.getElementById("bloc_page").style.backgroundColor= "white";
+            document.getElementById("bloc_page").style.color= "black";
+        }
+
+        //Astuces et decos pour les valeurs de Kin Marche
+        function valeur(){
+            document.getElementById("valeurs_Kin").innerHTML = 'Minutie, Courage, Unité, Ordre et Travail.'
+        }
+        function mission(){
+            document.getElementById("valeurs_Kin").innerHTML = 'Mettre à disposition des clients des produits de qualité, à un prix très abordable, pour toute catégorie de classe afin de voir une joie sourire dans chaque famille.'
+        }
+        function vision(){
+            document.getElementById("valeurs_Kin").innerHTML = 'Permettre une parfaite santé à la population, Se démarquer par son excellence, Gagner la confiance de ses clients et Etre pas seulement un marché, mais une société qui reduit le chômage, au travers de ses différentes promotions et action.'
+        }
+        function rien(){
+            document.getElementById("valeurs_Kin").innerHTML = ''
+        }
+
+        //Astuces pour les images du footer en balayant pour plus de photos
+        function sandwich(){
+            document.getElementById("img").src = "design/sandwiches.png";
+        }
+        function champagne(){
+            document.getElementById("img").src = "design/champagne.png";
+        }
+        function gateau(){
+            document.getElementById("img").src = "design/gateau.png";
+        }
+        function cosmetic(){
+            document.getElementById("img").src = "design/beaute.png";
+        }
+        function bonus(){
+            document.getElementById("joyce").src = "design/bonus.png";
+        }
+        function loto(){
+            document.getElementById("joyce").src = "design/lottoMoney.png";
+        }
+        function offre(){
+            document.getElementById("joyce").src = "design/famille.png";
+        }
+        
+    </script>
+</head>
+<body>
+    <!-- on cree un div pour toute la page "bloc_page"-->
+    <div id="bloc_page">
+        <!--en-tete ou header-->
+        <header>
+            <div id="titre_principal">
+                <img src="design/logo.png" alt="logo de Kin Marche" id="logo" />
+                <div id="head"><h1>KIN-MARCHE</h1></div>
+                <div id="down"><h2><marquee id="grand_marche" direction="right">Au prix du Grand Marché</marquee></h2></div>
+                <div id="up"><h2><marquee id="superMarket" direction="left">Super Market</marquee></h2></div>
+            </div>
+            
+        </header>
+
+        <div id="navigator">
+                <a href="../acccueil/index.html">Accueil</a><br><br>
+                <a href="../designers_&_formulaire/formulaire.html">Contacts</a>
+        </div>
+        <div id="kin_image">
+            <div id="sommes"><marquee id="nous"  direction="down" scrollamount="1">Qui sommes-nous?</marquee></div>
+            <div id="sur_kin">
+                Image de Kin Marché Kinshasa
+                <!-- <a href="#" class="plus_de_photos">Plus de photos
+                <img src="design/flechette.png" alt="" /></a> -->
+            </div>
+        </div>
+
+        <!--Ensuite le corps de la page-->
+        <section>
+            <!--article comporte les infos globales sur kin marche et sa petite historique incluse-->
+            <article>
+                <h2><marquee class=""  width="50%" scrollamount="4">Kin Marché: Qu'est-ce?</marquee></h2>
+                
+                <p>
+                    Kin Marché est une chaine des supermarchés alimentaires, présente en République Democratique du Congo depuis 2005 et
+                    appartenant au Groupe BNB (Biso Na Biso, qui signifie: "Entre nous").
+                </p>
+                <p>
+                    Disposant à ce jour d'une vingtaine de points de vente dans des emplacements de premier plan, Kin Marché se déploie
+                     à travers les villes du Congo afin de répondre aux besoins de chaque famille congolaise avec plusieurs gammes de 
+                    produits.
+                </p>
+                <br><br>
+            
+            
+                <h2><marquee class=""  width="50%" scrollamount="4">Petite Historique</marquee></h2>
+                <p>Kin Marché débute en 2004, en ouvrant son premier magasin proche du Grang Marché avec une petite boutique gérée par trois amis.
+                </p>
+                <p>A partir de 2015, la marque Kin Marché ouvre son deuxième magasin et régulièrement d'autres points de vente à travers
+                    la République Démocratique du Congo pour atteindre à ce jour une vingtaine de magasins
+                </p>
+                <p>
+                    Les principales villes d'implantation sont: Kinshasa, Lubumbashi et Matadi. Le magasin plus récent a ouvert ses portes aux consommateurs
+                    le 26 decembre 2020, dans la commune de Barumbu a Kinshasa. Egalemment, très récemment, Kin Marché se déploie vivement dans la Ville de 
+                    Goma.
+                </p>
+                <p>
+                    Kin Marché fournit aux consommateurs congolais une large variété de produits couvrant l'ensemble de ses besoins essentiels 
+                    (produits Frais, Epicerie, boissons, Santé & Beauté, et non alimentaire), des services complémentaires (services  bancaires, 
+                    telephoniques, parking, ...) dans un environnement accueillant.
+                </p>
+                <!-- <a href="#" class="produits">Savoir plus sur nos produits...</a>
+                <a href="www.kin-marche.com" class="kin_goma">Savoir plus sur Kin Marché Goma...</a> -->
+            </article>
+
+            <!--Place alors aux missions de kin marche et a leurs efficacite pour prouver leur SERIEUX-->
+            <aside>
+                <h1>Le plus mieux pour le client</h1>
+                <p><br><br>Notre motto est toujours et le restera:"<id="client_roi">Le client est Roi</id>".</p>
+                <p>Et c'est au travers d'un travail acharné et minutieusement que notre equipe cherche à satisfaire le client, sans
+                    permettre ne serait-ce qu'une erreur ou anti-valeur briser la confiance du Roi.
+                </p>
+                <button id="valeur" onmouseover="valeur();" onmouseleave="rien();">Valeurs</button>
+                <button id="mission" onmouseover="mission();" onmouseleave="rien();">Mission</button>
+                <button id="vision" onmouseover="vision();" onmouseleave="rien();">Vision</button>
+                <br><br>
+                <div id="valeurs_Kin">
+
+                </div>
+                
+                <!-- <div id="valeurs">
+                    <ul>
+                        <li>Minutie</li>
+                        <li>Courage</li>
+                        <li>Unite</li>
+                        <li>Ordre</li>
+                        <li>Travail</li>
+                    </ul>
+                </div>
+                <div id="missions">
+                    Mettre à disposition des clients des produits de qualité, à un prix très abordable, pour toute catégorie de classe afin 
+                    de voir une joie sourire dans chaque famille.
+                </div>
+                <div id="visions">
+                    <ul>
+                        <li>Permettre une parfaite santé à la population</li>
+                        <li>Se démarquer par son excellence</li>
+                        <li>Gagner la confiance de ses clients</li>
+                        <li>Etre pas seulement un marché, mais une société qui reduit le chômage, au travers de ses différentes promotions
+                            et action
+                        </li>
+                    </ul>
+                    <!-- <div id="sommes"><p>Qui sommes-nous?</p></div>
+                </div> -->
+                <!-- <p><img src="design/facebook.png" alt="facebook" class="fb"/> <img src="design/WhatsApp.png" alt="WhatsApp" class="wapp" />
+                    <img src="design/twitter.png" alt="twitter" class="tweeter" /> </p> -->
+                    <div class="motto"><marquee class="mot"  direction="right">KIN MARCHE: Au Prix du Grand Marché</marquee></div>
+            </aside>
+            
+        </section>
+
+        <!--Une fois le corps fini, concluons avec un petit apercu sur nos produits et un coup d'oeil sur les concepteurs de ce site!!!-->
+        <footer>
+            <div id="produits_bref">
+                <img id="img" src="design/gateau.png">
+                <h4>Petit coup d'oeil sur quelques de nos produits</h4>
+                <a href="#" onmouseover="sandwich();">Sandwiches</a><br>
+                <a onmouseover="champagne();">Champagne</a><br>
+                <a onmouseover="gateau();">Gâteaux</a><br>
+                <a onmouseover="cosmetic();">Produits de beauté</a><br>
+            </div>
+            <div id="offre">
+                <img id="joyce" src="design/lotto.png">
+                <h4>Nos offres et promotions</h4>
+                <a href="#" onmouseover="bonus();">Bonus sur achat</a><br>
+                <a href="#" onmouseover="loto();">Loterie et gagner plus</a><br>
+                <a href="#" onmouseover="offre();">Offre FAMILLE</a><br>
+            </div>
+            <div id="design">
+                <p>Site designé par le groupe 2 de LIC1/LSI de l'ISIG.</p>
+                <p>Plus d'infos sur <a href="../designers_&_formulaire/designers.html" class="designers">les designers</a>...</p>
+                <br>                    
+                <button id="mode_sombre" onclick="darkmode();">Mode sombre</button>
+                <button id="mode_clair" onclick="lightmode();">Mode éclairage</button><div class="theme">Changer le thème d'affichage</div>
+            
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
